@@ -1,0 +1,15 @@
+<div class="articulos">
+  <div *ngFor="let item of items">
+    <span>{{ item.nombre }} - ${{ item.precio.toFixed(2) }}</span>
+    <button (click)="aumentarCantidad(item)">+</button>
+    <button (click)="disminuirCantidad(item)">-</button>
+    <span>Cantidad: {{ item.cantidad }}</span>
+  </div>
+</div>
+<div class="ticket">
+  <h3>Ticket de Compra</h3>
+  <ul>
+    <li *ngFor="let item of items">{{ item.nombre }}: {{ item.cantidad }} - ${{ (item.precio * item.cantidad).toFixed(2) }}</li>
+  </ul>
+  <strong>Total: ${{ calcularTotal().toFixed(2) }}</strong>
+</div>

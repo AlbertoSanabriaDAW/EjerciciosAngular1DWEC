@@ -1,0 +1,10 @@
+.tarjeta {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+h2 {
+  color: darkblue;
+}
